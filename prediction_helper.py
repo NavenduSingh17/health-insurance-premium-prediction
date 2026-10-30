@@ -18,7 +18,7 @@ def calculate_health_risk_score(input_dict):
         score = score + 6
     if input_dict['Thyroid'] == 'Yes':
         score = score + 5
-    return score
+    return score/25
 
 def preprocess_young(input_dict):
     health_risk_score = calculate_health_risk_score(input_dict)
