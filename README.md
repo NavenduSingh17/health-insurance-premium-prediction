@@ -5,6 +5,25 @@
 **An end-to-end machine learning application for estimating annual health insurance premiums.**
 
 <p align="center">
+  <a href="https://navendu-singh-health-insurance-premium-prediction.streamlit.app">
+    <img src="https://img.shields.io/badge/🚀_Live_Demo-Try_the_App-FF4B4B?style=for-the-badge" alt="Live Demo" />
+  </a>
+</p>
+
+## Application Preview
+
+### Applicant Input Form
+
+![Health Insurance Premium Predictor - Input Form](screenshots/app-interface.png)
+
+### Predicted Annual Premium
+
+![Health Insurance Premium Predictor - Prediction Result](screenshots/prediction-result.png)
+
+[Open the live application](https://navendu-singh-health-insurance-premium-prediction.streamlit.app)
+
+
+<p align="center">
   <img src="https://img.shields.io/badge/Python-E3EDFF?style=flat&logo=python&logoColor=3776AB" />
   <img src="https://img.shields.io/badge/Streamlit-FFE0E0?style=flat&logo=streamlit&logoColor=FF4B4B" />
   <img src="https://img.shields.io/badge/Scikit--learn-FFE5DC?style=flat&logo=scikitlearn&logoColor=F7931E" />
