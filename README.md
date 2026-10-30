@@ -2,7 +2,7 @@
 
 # Health Insurance Premium Prediction
 
-**An end-to-end machine learning application for estimating annual health insurance premiums.**
+**An underwriting support tool that estimates annual health insurance premiums from applicant risk and policy details.**
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-E3EDFF?style=flat&logo=python&logoColor=3776AB" />
@@ -11,24 +11,28 @@
   <img src="https://img.shields.io/badge/XGBoost-DCF3E2?style=flat&logo=xgboost&logoColor=159447" />
 </p>
 
-</div>
-
 [Open the live application](https://navendu-singh-health-insurance-premium-prediction.streamlit.app)
 
----
+</div>
 
 ## Application Preview
 
-### Applicant Input Form
+#### Underwriter Input Form
 ![Health Insurance Premium Predictor - Input Form](screenshots/app-interface.png)
-### Predicted Annual Premium
+
+#### Premium Estimate for Underwriter Review
 ![Health Insurance Premium Predictor - Prediction Result](screenshots/prediction-result.png)
+
+#### Accessing the Live Application
+The application is hosted on Streamlit Community Cloud. If it has gone to sleep after a period of inactivity, open the live demo link and select **"Yes, get this app back up!"** when prompted. Wait for the app to start before entering applicant details.
+
+---
 
 ## Overview
 
-Health Insurance Premium Prediction is a regression-based machine learning project that estimates an individual's **annual health insurance premium** from demographic, financial, lifestyle, and health-related information.
+Health Insurance Premium Prediction is a regression-based underwriting support application. It helps an **insurance underwriter estimate an applicant's annual health insurance premium** using demographic, financial, lifestyle, and health-related information.
 
-The project includes an exploratory modelling workflow, separately trained models for two age groups, and a Streamlit application for interactive predictions. The application selects the appropriate saved model based on the applicant's age and returns an estimated annual premium in Indian rupees (₹).
+The project includes an exploratory modelling workflow, separately trained models for two age groups, and a Streamlit application designed for an underwriter's use during premium assessment. The application selects the appropriate saved model based on the applicant's age and returns an estimated annual premium in Indian rupees (₹).
 
 ## Key Features
 
@@ -41,7 +45,7 @@ The project includes an exploratory modelling workflow, separately trained model
 
 ## How It Works
 
-1. The user enters applicant details in the Streamlit interface.
+1. The underwriter enters the applicant's details in the Streamlit interface.
 2. The application creates a weighted health-risk score from the selected medical conditions.
 3. The applicant's age determines which saved model is selected:
    - Age ≤ 25: young-population model.
@@ -159,6 +163,10 @@ health-insurance-premium-prediction/
 │   ├── old_population_model.joblib
 │   └── young_population_model.joblib
 │
+├── screenshots/
+│   ├── app-interface.png
+│   └── prediction-result.png
+│
 ├── 1-notebook-premium-prediction.ipynb
 ├── 2-old-premium-prediction.ipynb
 ├── 3-young-premium-prediction.ipynb
@@ -215,11 +223,11 @@ pip install -r requirements.txt
 streamlit run main.py
 ```
 
-The Streamlit application will open in your browser. Enter the applicant details and select **Predict** to obtain an estimated annual premium.
+The Streamlit application will open in your browser. Enter the applicant's details as an underwriter and select **Predict** to obtain an estimated annual premium.
 
 ## Input Features
 
-The application accepts the following information:
+The underwriter provides the following applicant and policy information:
 
 | Category | Inputs |
 |---|---|
@@ -237,7 +245,7 @@ The repository contains the saved model artifacts required to run the Streamlit 
 
 ## Disclaimer
 
-This project is intended for educational and portfolio demonstration purposes. Predicted premiums are model estimates and should not be interpreted as actual insurance quotes, underwriting decisions, or financial advice.
+This project is intended for educational and portfolio demonstration purposes. Predicted premiums are model estimates intended to support an underwriter's assessment. They should not be interpreted as actual insurance quotes, underwriting decisions, or financial advice.
 
 ---
 
