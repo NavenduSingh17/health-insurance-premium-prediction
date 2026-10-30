@@ -4,10 +4,12 @@
 
 **An end-to-end machine learning application for estimating annual health insurance premiums.**
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/App-Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
-[![Scikit-learn](https://img.shields.io/badge/ML-Scikit--learn-F7931E?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
-[![XGBoost](https://img.shields.io/badge/Model-XGBoost-EC6B23)](https://xgboost.readthedocs.io/)
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-E3EDFF?style=flat&logo=python&logoColor=3776AB" />
+  <img src="https://img.shields.io/badge/Streamlit-FFE0E0?style=flat&logo=streamlit&logoColor=FF4B4B" />
+  <img src="https://img.shields.io/badge/Scikit--learn-FFE5DC?style=flat&logo=scikitlearn&logoColor=F7931E" />
+  <img src="https://img.shields.io/badge/XGBoost-DCF3E2?style=flat&logo=xgboost&logoColor=159447" />
+</p>
 
 </div>
 
